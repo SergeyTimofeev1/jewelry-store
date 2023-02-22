@@ -1,0 +1,26 @@
+@import '~normalize.css';
+@import 'style/fonts';
+@import 'style/var';
+@import 'style/style';
+
+// mixins
+
+@import './style/mixins/adaptive-value';
+@import './style/mixins/flex';
+@import './style/mixins/px-to-rem';
+@import './style/mixins/media';
+
+// sections
+
+@import './style/sections/header-top';
+@import './style/sections/header-bottom';
+@import './style/sections/promo';
+@import './style/sections/categories';
+@import './style/sections/sale';
+@import './style/sections/commercial';
+@import './style/sections/product';
+@import './style/sections/blog';
+
+// ui components
+
+@import './style/ui/buttons';

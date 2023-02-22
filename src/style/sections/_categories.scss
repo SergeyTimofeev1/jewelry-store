@@ -1,0 +1,48 @@
+.categories {
+  color: $text-color-dark;
+  margin-bottom: rem(120);
+
+  &__title {
+    margin-bottom: rem(40);
+  }
+
+  &__inner {
+    @include flex;
+    gap: rem(5);
+    flex-wrap: wrap;
+  }
+}
+
+.categories-cart {
+  width: rem(200);
+  height: rem(259);
+  position: relative;
+  padding: rem(61) rem(37) rem(15) rem(37);
+  padding-bottom: rem(15);
+  font-weight: 400;
+  background: $color-main;
+  text-align: center;
+  cursor: pointer;
+
+  @include media(430px) {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__img {
+    width: rem(127);
+    height: rem(100);
+    margin-bottom: rem(27);
+    object-fit: contain;
+    transition: all ease-in 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

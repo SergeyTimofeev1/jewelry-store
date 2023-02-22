@@ -1,0 +1,41 @@
+.blog {
+  @include adaptive-value('margin-bottom', 112, 40);
+
+  &__header {
+    @include flex;
+    @include adaptive-value('margin-bottom', 40, 15);
+  }
+
+  &__articles {
+    @include flex;
+    gap: rem(20);
+
+    @include media(1298px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.blog-article {
+  text-align: left;
+  width: rem(310);
+  height: rem(443);
+
+  &__img {
+    margin-bottom: rem(7);
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: rem(14);
+    color: $logo-subtitle-color;
+    margin-bottom: rem(12);
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: rem(16);
+    color: $text-color-dark;
+  }
+}
